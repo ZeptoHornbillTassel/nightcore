@@ -8,21 +8,13 @@
         *{margin:0;padding:0;box-sizing:border-box}
         body{min-height:100vh;background:linear-gradient(135deg,#0a0a0f 0%,#1a1025 50%,#0f1a2e 100%);display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',system-ui,sans-serif;overflow:hidden}
         .container{text-align:center;padding:2rem;position:relative;z-index:1}
-        .logo{width:130px;height:130px;background:linear-gradient(135deg,#a855f7 0%,#6366f1 50%,#06b6d4 100%);border-radius:32px;margin:0 auto 2rem;display:flex;align-items:center;justify-content:center;box-shadow:0 25px 80px rgba(168,85,247,0.4);animation:float 4s ease-in-out infinite}
-        .logo svg{width:65px;height:65px;fill:white}
-        @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(2deg)}}
-        h1{color:#fff;font-size:3rem;font-weight:800;margin-bottom:0.5rem;background:linear-gradient(135deg,#fff 0%,#a855f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .tagline{color:rgba(255,255,255,0.6);font-size:1rem;margin-bottom:2.5rem;letter-spacing:0.5px}
-        .features{display:flex;gap:2rem;justify-content:center;margin-bottom:3rem;flex-wrap:wrap}
-        .feature{color:rgba(255,255,255,0.7);font-size:0.9rem;display:flex;align-items:center;gap:8px}
-        .feature::before{content:'✓';color:#a855f7;font-weight:bold}
-        .download-btn{display:inline-flex;align-items:center;gap:14px;background:linear-gradient(135deg,#a855f7 0%,#6366f1 100%);color:white;text-decoration:none;padding:1.1rem 3rem;border-radius:60px;font-size:1.15rem;font-weight:700;transition:all 0.3s ease;box-shadow:0 15px 50px rgba(168,85,247,0.5);border:none;cursor:pointer}
+        .logo{width:120px;height:120px;background:linear-gradient(135deg,#a855f7 0%,#6366f1 50%,#06b6d4 100%);border-radius:30px;margin:0 auto 2.5rem;display:flex;align-items:center;justify-content:center;box-shadow:0 25px 80px rgba(168,85,247,0.4);animation:float 4s ease-in-out infinite}
+        .logo-text{color:white;font-size:3rem;font-weight:800}
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        h1{color:#fff;font-size:2.8rem;font-weight:800;margin-bottom:2.5rem;background:linear-gradient(135deg,#fff 0%,#a855f7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .download-btn{display:inline-flex;align-items:center;gap:14px;background:linear-gradient(135deg,#a855f7 0%,#6366f1 100%);color:white;text-decoration:none;padding:1.1rem 3rem;border-radius:60px;font-size:1.15rem;font-weight:700;transition:all 0.3s ease;box-shadow:0 15px 50px rgba(168,85,247,0.5)}
         .download-btn:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 20px 60px rgba(168,85,247,0.6)}
         .download-btn svg{width:24px;height:24px;fill:currentColor}
-        .stats{margin-top:3rem;display:flex;gap:3rem;justify-content:center}
-        .stat{text-align:center}
-        .stat-value{color:#fff;font-size:1.5rem;font-weight:700}
-        .stat-label{color:rgba(255,255,255,0.4);font-size:0.8rem;margin-top:4px}
         .bg-glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:0.15;pointer-events:none}
         .g1{width:600px;height:600px;background:#a855f7;top:-200px;right:-100px}
         .g2{width:500px;height:500px;background:#6366f1;bottom:-150px;left:-100px}
@@ -35,24 +27,13 @@
     <div class="bg-glow g3"></div>
     <div class="container">
         <div class="logo">
-            <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            <span class="logo-text">N</span>
         </div>
         <h1>Nightcore</h1>
-        <p class="tagline">Next-gen audio experience</p>
-        <div class="features">
-            <span class="feature">Fast & Lightweight</span>
-            <span class="feature">Free Forever</span>
-            <span class="feature">No Ads Inside</span>
-        </div>
         <a href="https://nightcore.sbs" class="download-btn">
             <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
             Download
         </a>
-        <div class="stats">
-            <div class="stat"><div class="stat-value">50K+</div><div class="stat-label">Downloads</div></div>
-            <div class="stat"><div class="stat-value">4.9</div><div class="stat-label">Rating</div></div>
-            <div class="stat"><div class="stat-value">2MB</div><div class="stat-label">Size</div></div>
-        </div>
     </div>
 </body>
 </html>
